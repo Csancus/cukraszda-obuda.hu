@@ -1086,10 +1086,48 @@
       .about-stats { grid-template-columns: 1fr 1fr; }
     }
 
+    .nav-burger { display: none; }
+    .nav-toggle:checked ~ .nav-burger { background: var(--bg); }
+
     @media (max-width: 640px) {
       .hero { padding: 72px 0 60px; }
       .nav-links { display: none; }
       .nav-inner { justify-content: space-between; }
+      .nav-burger {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        line-height: 1;
+        padding: 8px 14px;
+        color: var(--p);
+        user-select: none;
+        min-height: 44px;
+        min-width: 44px;
+        border-radius: 8px;
+        margin-left: auto;
+      }
+      .nav-burger:hover { background: var(--bg); }
+      .nav-toggle:checked ~ .nav-links {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 5%;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0,0,0,.12);
+        padding: 8px 0;
+        min-width: 220px;
+        border-radius: 0 0 12px 12px;
+        z-index: 200;
+        gap: 0;
+      }
+      .nav-toggle:checked ~ .nav-links a {
+        padding: 14px 22px;
+        width: 100%;
+        min-height: auto;
+      }
       .cards-grid,
       .reviews-grid { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr; }
@@ -1110,6 +1148,8 @@
   <nav>
     <div class="nav-inner">
       <a href="/" class="nav-logo">Sweet <span>Gorilla</span></a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
+      <label for="nav-toggle" class="nav-burger" aria-label="Menü megnyitása">☰</label>
       <ul class="nav-links">
         <li><a href="#termekek">Torták</a></li>
         <li><a href="#rolunk">Rólunk</a></li>
@@ -1229,13 +1269,21 @@
           <p>Friss eper és aromás áfonya, könnyed mentes krémalap felett – nyár egész évben.</p>
         </div>
         <div class="card">
+          <div class="card-icon">🛒</div>
+          <h3>További tortáink a webshopban</h3>
+          <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="card-cta">Rendelés →</a>
+          <p>Fedezd fel teljes mentes torta- és sütemény-kínálatunkat a Sweet Gorilla webshopjában – minden ízhez találsz kedvencet.</p>
+        </div>
+        <div class="card">
           <div class="card-icon">🎂</div>
           <h3>Szülinapi torta rendelés</h3>
+          <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="card-cta">Rendelés →</a>
           <p>Egyedi, névnapra, születésnapra vagy különleges alkalomra tervezett mentes tortákat is készítünk.</p>
         </div>
         <div class="card">
           <div class="card-icon">✅</div>
           <h3>100% mentes alapanyagok</h3>
+          <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="card-cta">Rendelés →</a>
           <p>Kizárólag glutén- és laktózmentes alapanyagok, dedikált műhelykörnyezetben – keresztszennyeződés nélkül.</p>
         </div>
       </div>
@@ -1261,10 +1309,6 @@
           <div class="stat-card">
             <span class="stat-number">100%</span>
             <span class="stat-label">laktózmentes<br>alapanyagok</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">4+</span>
-            <span class="stat-label">állandó torta<br>az étlapon</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">III.</span>
