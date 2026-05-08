@@ -82,7 +82,8 @@
         "sameAs": [
           "https://www.facebook.com/SweetGorilla",
           "https://www.instagram.com/sweetgorillatorta",
-          "https://sweetgorilla.hu/"
+          "https://sweetgorilla.hu/",
+          "https://www.google.com/maps/place/Sweet+Gorilla+Mentes+Tortam%C5%B1hely/@47.548645,19.0396551,17z/data=!3m1!4b1!4m6!3m5!1s0x4741d99e5826996f:0xd6bb78a7b657f504!8m2!3d47.5486414!4d19.04223!16s%2Fg%2F11sk6fchdx"
         ]
       },
       {
@@ -94,7 +95,8 @@
         "sameAs": [
           "https://www.facebook.com/SweetGorilla",
           "https://www.instagram.com/sweetgorillatorta",
-          "https://sweetgorilla.hu/"
+          "https://sweetgorilla.hu/",
+          "https://www.google.com/maps/place/Sweet+Gorilla+Mentes+Tortam%C5%B1hely/@47.548645,19.0396551,17z/data=!3m1!4b1!4m6!3m5!1s0x4741d99e5826996f:0xd6bb78a7b657f504!8m2!3d47.5486414!4d19.04223!16s%2Fg%2F11sk6fchdx"
         ],
         "email": "info@sweetgorilla.hu",
         "telephone": "+36704248459",
@@ -863,6 +865,30 @@
     .faq-answer a { color: var(--a); text-decoration: underline; }
     .faq-answer a:hover { color: #6f3a6e; }
 
+    .google-review-banner {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 22px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 100px;
+      text-decoration: none !important;
+      font-size: 0.95rem;
+      margin-top: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      transition: all .2s ease;
+    }
+    .google-review-banner:hover {
+      border-color: var(--a);
+      box-shadow: 0 6px 18px rgba(0,0,0,.1);
+      transform: translateY(-1px);
+    }
+    .grb-stars { color: #f4a800; letter-spacing: 1.5px; font-size: 1rem; }
+    .grb-rating { font-weight: 800; color: var(--p); }
+    .grb-text { color: var(--text-muted); }
+    .grb-arrow { color: var(--a); font-weight: 700; }
+
     /* ─── CONTACT ─── */
     .contact {
       padding: 92px 0;
@@ -1265,6 +1291,12 @@
         <span class="section-eyebrow">Vélemények</span>
         <h2>Mit mondanak rólunk?</h2>
         <p>Valódi visszajelzések elégedett vendégeinktől.</p>
+        <a href="https://www.google.com/maps/place/Sweet+Gorilla+Mentes+Tortam%C5%B1hely/@47.548645,19.0396551,17z/data=!3m1!4b1!4m6!3m5!1s0x4741d99e5826996f:0xd6bb78a7b657f504!8m2!3d47.5486414!4d19.04223!16s%2Fg%2F11sk6fchdx" target="_blank" rel="noopener" class="google-review-banner" aria-label="Sweet Gorilla Google vélemények">
+          <span class="grb-stars">★★★★★</span>
+          <span class="grb-rating">5.0</span>
+          <span class="grb-text">· 162 vélemény Google-ön</span>
+          <span class="grb-arrow">→</span>
+        </a>
       </div>
       <div class="reviews-grid">
         <div class="review-card">
