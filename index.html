@@ -557,17 +557,22 @@
       margin-bottom: 8px;
     }
 
-    .card-price {
-      display: inline-block;
-      font-size: 0.84rem;
+    .card-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
       font-weight: 700;
-      color: var(--a);
-      background: var(--bg);
-      border: 1px solid var(--a);
-      padding: 3px 12px;
-      border-radius: 100px;
-      margin-bottom: 10px;
+      color: var(--white);
+      background: var(--a);
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-bottom: 12px;
+      min-height: 38px;
+      transition: background 0.18s, transform 0.15s;
     }
+    .card-cta:hover { background: #6f3a6e; transform: translateY(-1px); }
 
     .card p {
       font-size: 0.95rem;
@@ -1028,7 +1033,7 @@
         <li><a href="#velemenyek">Vélemények</a></li>
         <li><a href="#gyik">GYIK</a></li>
         <li><a href="#kapcsolat">Kapcsolat</a></li>
-        <li><a href="https://sweetgorilla.hu/" target="_blank" rel="noopener" class="nav-cta">Rendelés →</a></li>
+        <li><a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="nav-cta">Rendelés →</a></li>
       </ul>
     </div>
   </nav>
@@ -1041,8 +1046,8 @@
       <h1>Cukrászda Óbuda Sweet Gorilla</h1>
       <p class="hero-subtitle">Ha mentes torta, Sweet Gorilla – kézzel készített, 100% mentes finomságok Óbudán.</p>
       <div class="hero-btns">
-        <a href="https://sweetgorilla.hu/" target="_blank" rel="noopener" class="btn btn-primary">Tortát rendelek →</a>
-        <a href="#termekek" class="btn btn-outline">Kínálatunk</a>
+        <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="btn btn-primary">Tortát rendelek →</a>
+        <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="btn btn-outline">Kínálatunk</a>
       </div>
       <div class="hero-image-wrap">
         <img
@@ -1113,25 +1118,25 @@
         <div class="card">
           <div class="card-icon">🍋</div>
           <h3>Mákos citromtorta</h3>
-          <span class="card-price">13 990 Ft</span>
+          <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="card-cta">Rendelés →</a>
           <p>Friss citrom és illatos mák harmonikus találkozása, lágy mentes krémmel rétegezve.</p>
         </div>
         <div class="card">
           <div class="card-icon">🍵</div>
           <h3>Matcha-mangó torta</h3>
-          <span class="card-price">13 990 Ft</span>
+          <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="card-cta">Rendelés →</a>
           <p>Japán matcha és trópusi mangó egyedülálló párosítása, 100% növényi hozzávalókból.</p>
         </div>
         <div class="card">
           <div class="card-icon">🥜</div>
           <h3>Sós-mogyorós karamell</h3>
-          <span class="card-price">13 990 Ft</span>
+          <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="card-cta">Rendelés →</a>
           <p>Ropogós mogyoró, selymes karamell és egy csipet só – az édes-sós kedvencek számára.</p>
         </div>
         <div class="card">
           <div class="card-icon">🍓</div>
           <h3>Epres áfonyatorta</h3>
-          <span class="card-price">13 990 Ft</span>
+          <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="card-cta">Rendelés →</a>
           <p>Friss eper és aromás áfonya, könnyed mentes krémalap felett – nyár egész évben.</p>
         </div>
         <div class="card">
@@ -1186,7 +1191,7 @@
     <div class="container">
       <h2>Rendelj tortát most!</h2>
       <p>Válaszd ki kedvenc ízed és rendeld meg online – glutén és laktóz nélkül, ízletesen.</p>
-      <a href="https://sweetgorilla.hu/" target="_blank" rel="noopener" class="btn btn-white">Rendelés a weboldalon →</a>
+      <a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="btn btn-white">Rendelés a weboldalon →</a>
     </div>
   </section>
 
