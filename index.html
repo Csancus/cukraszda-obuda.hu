@@ -8,6 +8,8 @@
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#b378b2" />
   <link rel="canonical" href="https://cukraszda-obuda.hu/" />
+  <link rel="preconnect" href="https://sweetgorilla.hu" crossorigin />
+  <link rel="preload" as="image" href="https://sweetgorilla.hu/wp-content/uploads/2023/12/SweetGorilla_kiemelt_kep.jpg.jpg" fetchpriority="high" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -130,7 +132,7 @@
 
     :root {
       --p: #1a0a2e;
-      --a: #b378b2;
+      --a: #8b4d8a;
       --bg: #f9f4fb;
       --white: #ffffff;
       --text: #1a1a1a;
@@ -223,7 +225,7 @@
       letter-spacing: 0.01em;
     }
 
-    .nav-cta:hover { background: #9b5f9a !important; color: var(--white) !important; }
+    .nav-cta:hover { background: #6f3a6e !important; color: var(--white) !important; }
 
     /* ─── HERO ─── */
     .hero {
@@ -295,7 +297,7 @@
       box-shadow: 0 4px 14px rgba(179,120,178,.35);
     }
 
-    .btn-primary:hover { background: #9b5f9a; }
+    .btn-primary:hover { background: #6f3a6e; }
 
     .btn-outline {
       background: var(--white);
@@ -692,7 +694,7 @@
     }
 
     .faq-answer a { color: var(--a); text-decoration: underline; }
-    .faq-answer a:hover { color: #9b5f9a; }
+    .faq-answer a:hover { color: #6f3a6e; }
 
     /* ─── CONTACT ─── */
     .contact {
@@ -926,6 +928,7 @@
     </div>
   </nav>
 
+  <main>
   <!-- HERO -->
   <section class="hero">
     <div class="container">
@@ -941,6 +944,8 @@
           src="https://sweetgorilla.hu/wp-content/uploads/2023/12/SweetGorilla_kiemelt_kep.jpg.jpg"
           alt="Sweet Gorilla mentes torták – gluténmentes és laktózmentes finomságok Óbudán"
           loading="eager"
+          fetchpriority="high"
+          decoding="async"
           width="820"
           height="420"
         />
@@ -1244,6 +1249,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer>
