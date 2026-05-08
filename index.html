@@ -358,6 +358,37 @@
 
     .nav-cta:hover { background: #6f3a6e !important; color: var(--white) !important; }
 
+    .nav-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--p) !important;
+      padding: 10px 14px !important;
+      border-radius: 8px;
+      white-space: nowrap;
+      min-height: 44px;
+      transition: color .18s, background .18s;
+    }
+    .nav-phone:hover { color: var(--a) !important; background: var(--bg) !important; }
+
+    .nav-phone-mobile {
+      display: none;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--a) !important;
+      white-space: nowrap;
+      min-height: 44px;
+      padding: 6px 10px;
+    }
+    @media (max-width: 640px) {
+      .nav-phone { display: none; }
+      .nav-phone-mobile { display: inline-flex; }
+    }
+
     /* ─── HERO ─── */
     .hero {
       background: linear-gradient(160deg, var(--bg) 0%, var(--white) 100%);
@@ -1059,8 +1090,10 @@
         <li><a href="#velemenyek">Vélemények</a></li>
         <li><a href="#gyik">GYIK</a></li>
         <li><a href="#kapcsolat">Kapcsolat</a></li>
+        <li><a href="tel:+36704248459" class="nav-phone">📞 +36 70 424 8459</a></li>
         <li><a href="https://sweetgorilla.hu/webshop/" target="_blank" rel="noopener" class="nav-cta">Rendelés →</a></li>
       </ul>
+      <a href="tel:+36704248459" class="nav-phone-mobile">📞 +36 70 424 8459</a>
     </div>
   </nav>
 
