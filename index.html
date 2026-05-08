@@ -116,6 +116,26 @@
           "latitude": "47.5650",
           "longitude": "19.0420"
         },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "07:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "00:00",
+            "description": "Zárva – online rendelés a webshopban 0–24"
+          }
+        ],
+        "potentialAction": {
+          "@type": "OrderAction",
+          "target": "https://sweetgorilla.hu/webshop/",
+          "name": "Online rendelés 0–24"
+        },
         "image": {
           "@type": "ImageObject",
           "url": "https://sweetgorilla.hu/wp-content/uploads/2023/12/SweetGorilla_kiemelt_kep.jpg.jpg",
@@ -1089,10 +1109,11 @@
           </div>
         </div>
         <div class="strip-item">
-          <div class="strip-icon">🛒</div>
+          <div class="strip-icon">🕐</div>
           <div>
-            <strong>Rendelés</strong>
-            Rendelés online
+            <strong>Nyitvatartás</strong>
+            H–P: 7:00–14:00<br>
+            <span style="font-size:0.84rem;opacity:0.75;">Webshop 0–24</span>
           </div>
         </div>
         <div class="strip-item">
@@ -1364,11 +1385,11 @@
           </div>
         </div>
         <div class="contact-card">
-          <div class="contact-card-icon">🛒</div>
+          <div class="contact-card-icon">🕐</div>
           <div class="contact-card-body">
-            <strong>Rendelés módja</strong>
-            <span>Rendelés online</span>
-            <span class="contact-sub">sweetgorilla.hu weboldalon</span>
+            <strong>Nyitvatartás</strong>
+            <span>H–P: 7:00–14:00</span>
+            <span class="contact-sub">Szombat–vasárnap zárva · Webshop 0–24 elérhető</span>
           </div>
         </div>
       </div>
